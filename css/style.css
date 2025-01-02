@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+#wrap{
+    width: 1000px;
+    height: 650px;
+}
+aside{
+    width: 200px;
+    height: 650px;
+    float: left;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+}
+.logo a{
+    margin-top: 30px;
+}
+nav{
+    width: 200px;
+    height: 550px;
+}
+.menu{
+    margin: 10px;
+    width: 180px;
+    background-color: #ddd;
+    text-align: center;
+    position: relative;
+}
+.menu li{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+}
+.menu>li>a{
+    background-color: #000;
+    color: #fff;
+}
+.menu>li>a:hover{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.sub{
+    width: 180px;
+    height: 200px;
+    background-color: #000;
+    position: absolute;
+    left: 180px;
+    top: -10px;
+    display: none;
+}
+.sub li a{
+    color: #fff;
+}
+.sub li a:hover{
+    background-color: #eee;
+    color: #000;
+}
+#slide{
+    width: 800px;
+    height: 350px;
+    background-color: beige;
+    float: left;
+    overflow: hidden;
+}
+.imgbox{
+    width: 2400px;
+    height: 350px;
+}
+.imgbox a{
+    float: left;
+}
+#contents{
+    width: 800px;
+    height: 200px;
+    float: left;
+}
+/* #contents>div{
+    width: calc(800px / 3);
+    height: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+#contents>div>h4{
+    font-weight: bold;
+    width: 100px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    text-align: center;
+}
+.notice{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin : 10px 0px;
+}
+.notice ul li{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.notice ul li span{
+    float: right;
+}
+.notice ul li:nth-child(2n){
+    background-color: #eee;
+}
+.gallery{
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin : 10px 0px 10px 30px;
+}
+.gallery ul li{
+    float: left;
+    margin: 30px 3px;
+}
+.gallery ul li:hover{
+    opacity: 0.5;
+}
+.shortcut{
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+.shortcut a img{
+    width: 200px;
+    height: 180px;
+}
+footer{
+    width: 800px;
+    height: 100px;
+    background-color: #ddd;
+    float: left;
+}
+.flogo{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.flogo a{
+    margin-top: 30px;
+}
+.fmenu{
+    width: 600px;
+    height: 50px;
+    float: left;
+}
+.fmenu ul li{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* float: left; */
+    display: inline-block;
+}
+.fmenu ul{
+    text-align: center;
+}
+.fmenu ul li a:hover{
+    color: #5e095e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.copy{
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+}
+#modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#modal.active{
+    display: block;
+}
+.pop{
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+}
+.title{
+    padding: 20px 10px;
+    text-align: center;
+    background-color: beige;
+    font-weight: bold;
+    font-size: 18px;
+}
+.text{
+    padding: 10px;
+    line-height: 25px;
+    font-size: 14px;
+}
+button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 25px;
+    background-color: bisque;
+    border: none;
+    font-weight: bold;
+}
